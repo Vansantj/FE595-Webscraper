@@ -8,7 +8,7 @@ Created on Mon Feb 24 18:12:48 2020
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-
+import re
 def get_HTML(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text,'html.parser')
